@@ -237,6 +237,28 @@ Detailausarbeitungen für einzelne Abenteuer, Szenen, Gegner oder Begegnungen ge
 
 Wenn eine Information in mehreren Dateien relevant ist, wird sie nur an einem Ort vollständig gepflegt. Alle anderen Dateien enthalten nur Kurzverweise, Konsequenzen oder Zusammenfassungen.
 
+### Verbindliche Synchronisationsregel
+
+Immer wenn ein Inhalt in irgendeiner Datei hinzugefügt, verändert oder als neuer Kanon festgelegt wird, müssen automatisch auch die dadurch notwendigen Ergänzungen oder Änderungen in den betroffenen Hauptdateien vorgenommen werden.
+
+Das ist keine optionale Nachpflege, sondern ein verbindlicher Bestandteil jeder inhaltlichen Änderung.
+
+Beispiele:
+
+- Wenn in `chronik.md` festgehalten wird, dass ein Ort durch eine Lawine verschüttet wurde, muss der Status dieses Ortes auch in `orte.md` angepasst werden.
+- Wenn ein NSC in einem Abenteuer stirbt, verschwindet oder die Seiten wechselt, muss sein Status auch in `nscs.md` aktualisiert werden.
+- Wenn ein neuer Gegenstand, ein neues Bündnis oder ein neuer kampagnenweiter Fakt bestätigt wird, müssen die entsprechenden Einträge auch in `kampagnenbibel.md`, `offene_handlungsfaeden.md` oder anderen betroffenen Hauptdateien ergänzt werden.
+
+Für jede relevante Änderung gilt daher immer die Pflicht zur Prüfung von Folgewirkungen in mindestens diesen Hauptdateien:
+
+- `chronik.md`
+- `kampagnenbibel.md`
+- `nscs.md`
+- `orte.md`
+- `offene_handlungsfaeden.md`
+
+Ziel ist, dass keine kampagnenrelevante Änderung isoliert nur in einer einzelnen Datei stehen bleibt, wenn sie Auswirkungen auf den Gesamtzustand der Kampagne hat.
+
 ---
 
 ## Standard für Datenblatt-Dateien von NSCs und Monstern
