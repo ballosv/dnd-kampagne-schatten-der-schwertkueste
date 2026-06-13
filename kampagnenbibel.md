@@ -459,6 +459,14 @@ Ruhktar, einen gebundenen Feuergeist.
 
 Die wichtigste Waffe gegen den Drachen.
 
+### Aktueller Kanonstand
+
+Die Helden haben Frostbrecher in Gnomengard erhalten.
+
+Die Axt ist aktiv, aber ihre volle Macht wurde noch nicht entfesselt.
+
+Aktuell ist kanonisch nur die erste Entwicklungsstufe sicher erreicht: Glimmende Resonanz.
+
 ### Entwicklungsstufen
 
 1. Glimmende Resonanz

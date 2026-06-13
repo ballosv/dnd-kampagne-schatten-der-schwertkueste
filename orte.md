@@ -219,7 +219,7 @@ Versteckte Festung der Gnome in den Schwertbergen.
 - Mechanische Konstruktionen
 - Magische Experimente
 - Zahlreiche Fallen
-- Heimat des Artefakts Frostbrecher
+- Herkunftsort des Artefakts Frostbrecher
 
 ### Status
 Verbündeter der Helden

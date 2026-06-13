@@ -168,6 +168,10 @@ Unvollständig
 ### Ausgangslage
 Die Axt Frostbrecher enthält den gebundenen Feuergeist Ruhktar.
 
+Die Helden besitzen Frostbrecher bereits, doch bisher ist nur die Glimmende Resonanz sicher erwacht.
+
+Die weiteren Stufen der Axt sind weiterhin Teil eines offenen Entwicklungsfadens.
+
 ### Offene Fragen
 - Wer war Ruhktar wirklich?
 - Welche Erinnerungen besitzt er?
