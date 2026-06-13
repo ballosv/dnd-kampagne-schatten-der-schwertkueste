@@ -92,6 +92,15 @@ Geheim:
 - Exzentrischer Tüftler
 - Unterstützt die Helden mit Wissen und Technik
 
+## Mimik (Endboss)
+### Monstrosität in Gnomengard
+- Formwandelnde Boss-Kreatur in Gnomengard
+- Verantwortlich für Angst, Chaos und Paranoia innerhalb der Festung
+- Bedrohung im Umfeld des Thronsaals
+- ID: `monster-gnomengard-mimik-endboss`
+- Typ: `Monster`
+- Datenblatt: `datenblaetter/monster-gnomengard-mimik-endboss.md`
+
 # Drachen und übernatürliche Wesen
 
 ## Kalthyros (Cryovain)
