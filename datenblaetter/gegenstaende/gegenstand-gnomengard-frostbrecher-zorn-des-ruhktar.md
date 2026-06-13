@@ -120,6 +120,26 @@
 
 **Auffällige Merkmale:** Flächig leuchtende blaue Runen auf der Klinge, frostschimmernde Schneide, dunkler reich verzierter Axtkopf, lederumwickelter Griffbereich und ein rauer Holzschaft, der älter wirkt als der magische Kopf der Waffe
 
+## Vorlesetext für Spieler
+
+„Vor euch ruht eine Axt, die nicht geschmiedet wirkt wie andere Waffen.
+
+Ihr Kopf ist dunkel wie altes Eisen, schwer und kunstvoll verziert, doch die breite Schneide leuchtet in einem kalten, unnatürlichen Blau. Gnomische Runen ziehen sich über die Klinge, klar und scharf wie Linien aus eingefrorenem Sternenlicht.
+
+Wo das Licht über das Metall wandert, knistert der Frost auf dem Boden leise. Der Schaft besteht aus dunklem, rauem Holz und ist im Griff mit Leder umwickelt, als sei diese Waffe nicht nur für ein Podest, sondern für den Kampf geschaffen worden.
+
+Als ihr näher tretet, fühlt ihr die Kälte zuerst.
+
+Dann etwas darunter.
+
+Eine zweite Präsenz.
+
+Kein offenes Feuer, sondern eine verborgene Glut, tief im Inneren der Axt, als würde unter Eis noch immer ein Herz schlagen.
+
+Auf der Klinge glimmen die Runen einen Moment heller auf.
+
+Als hätten sie euch erkannt.“
+
 ## Rolle in der Kampagne
 
 **Narrative Funktion:** Zentrale Anti-Drachen-Waffe und sichtbares Symbol der Allianz mit Gnomengard
