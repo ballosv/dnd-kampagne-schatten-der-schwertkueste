@@ -108,10 +108,30 @@ Enthält:
 - letzter bekannter Stand
 - relevante Geheimnisse
 - Verweise auf Abenteuerauftritte
+- Verweise auf die zugehörige Datenblatt-Datei eines NSC oder Monsters
 
 Leitfrage:
 
 Wer ist diese Figur aktuell und welche Rolle spielt sie in der Kampagne?
+
+### Datenblatt-Dateien für NSCs und Monster
+
+Für jeden NSC und jedes Monster, das regelmechanisch relevant ist oder im Spiel als eigenständige Figur geführt wird, wird zusätzlich eine eigene Datei angelegt.
+
+Diese Datei dient als standardisierte Quelle für:
+
+- Spielwerte
+- regelmechanische Merkmale
+- Aktionen
+- besondere Fähigkeiten
+- Beute oder Belohnungen
+- visuelle oder beschreibende Zusatzinformationen
+
+Diese Dateien werden so aufgebaut, dass daraus später automatisiert oder halbautomatisiert ein Datenblatt generiert werden kann.
+
+Die Datenblatt-Datei ist nicht der primäre Ort für den erzählerischen Kampagnenstatus. Dafür bleibt `nscs.md` zuständig.
+
+Die Datenblatt-Datei ist der primäre Ort für die standardisierte regelmechanische Darstellung einer Figur oder Kreatur.
 
 ### `orte.md`
 
@@ -193,11 +213,179 @@ Detailausarbeitungen für einzelne Abenteuer, Szenen, Gegner oder Begegnungen ge
 - Tatsächlich gespielte Ereignisse gehören in `chronik.md`
 - Metaplot und kampagnenweite Wahrheiten gehören in `kampagnenbibel.md`
 - Figurenstatus gehört in `nscs.md`
+- standardisierte Spielwerte und Datenblattinformationen von NSCs und Monstern gehören in eigene Datenblatt-Dateien
 - Ortsstatus gehört in `orte.md`
 - ungelöste Konflikte und zukünftige Entwicklungen gehören in `offene_handlungsfaeden.md`
 - vorbereitete Szenen, Begegnungen und Abenteuerstrukturen gehören in die Abenteuerordner unter `abenteuer`
 
 Wenn eine Information in mehreren Dateien relevant ist, wird sie nur an einem Ort vollständig gepflegt. Alle anderen Dateien enthalten nur Kurzverweise, Konsequenzen oder Zusammenfassungen.
+
+---
+
+## Standard für Datenblatt-Dateien von NSCs und Monstern
+
+### Ziel
+
+Jeder NSC und jedes Monster mit eigener regelmechanischer Relevanz erhält eine eigene Datei, damit die Informationen eindeutig, einheitlich und maschinenlesbar genug für eine spätere Datenblatt-Generierung vorliegen.
+
+### Grundregeln
+
+- jede regelrelevante Figur oder Kreatur erhält genau eine primäre Datenblatt-Datei
+- der Anzeigename in der Datei muss eindeutig dem Namen in `nscs.md` zuordenbar sein
+- die Datei muss standardisierte Feldbezeichnungen verwenden
+- Spielwerte und Regelinformationen sollen aus `SRD_CC_v5.1_DE.pdf` ableitbar und mit D&D 5.1 vereinbar sein
+- freie Fließtexte sind erlaubt, aber klar von strukturierten Datenblöcken zu trennen
+
+### Zuordnung zwischen `nscs.md` und Datenblatt-Dateien
+
+Jeder Eintrag in `nscs.md`, der eine eigene regelmechanische Darstellung benötigt, soll auf genau eine Datenblatt-Datei verweisen.
+
+Die Zuordnung erfolgt über drei gemeinsame Kernelemente:
+
+- Anzeigename
+- eindeutige ID
+- Dateipfad
+
+### Verbindliche Mindestfelder jeder Datenblatt-Datei
+
+Jede Datenblatt-Datei soll mindestens die folgenden Felder enthalten:
+
+- `id`
+- `name`
+- `typ`
+- `kategorie`
+- `quelle`
+- `regelbasis`
+- `status`
+
+Bedeutung:
+
+- `id`: kampagnenweit eindeutiger technischer Schlüssel
+- `name`: Anzeigename der Figur oder Kreatur
+- `typ`: `nsc` oder `monster`
+- `kategorie`: z. B. Humanoider, Drache, Monstrosität, Untoter
+- `quelle`: z. B. Kampagnenoriginal, adaptiert, SRD-basiert
+- `regelbasis`: in diesem Projekt standardmäßig `DND5.1-SRD-DE`
+- `status`: optionaler Kurzstatus wie Aktiv, Tot, Verbündet, Feindlich
+
+### Empfohlenes Namensschema für die ID
+
+Die ID soll stabil, eindeutig und dateitauglich sein.
+
+Empfohlenes Schema:
+
+`typ-region-oder-fraktion-name`
+
+Beispiele:
+
+- `nsc-phandalin-harbin-wester`
+- `nsc-schattengilde-elgor-der-eismagier`
+- `monster-gnomengard-mimik-endboss`
+- `monster-eisnadelfestung-kalthyros`
+
+Regeln für IDs:
+
+- nur Kleinbuchstaben
+- Wörter mit Bindestrichen trennen
+- keine Umlaute, stattdessen `ae`, `oe`, `ue`
+- keine Sonderzeichen außer Bindestrich
+- die ID soll sich nach Möglichkeit nie ändern
+
+### Empfohlenes Dateinamensschema
+
+Der Dateiname soll direkt aus der ID ableitbar sein.
+
+Empfohlenes Schema:
+
+`[id].md`
+
+Beispiele:
+
+- `nsc-phandalin-harbin-wester.md`
+- `nsc-schattengilde-elgor-der-eismagier.md`
+- `monster-gnomengard-mimik-endboss.md`
+
+### Ablageorte
+
+Die Dateien müssen an fest definierten Orten abgelegt werden, damit ihre Referenzen stabil und kampagnenweit einheitlich bleiben.
+
+Verbindliche Ablage:
+
+- kampagnenweite NSC- und Monster-Datenblätter liegen im zentralen Ordner `datenblaetter`
+- abenteuerspezifische NSC- und Monster-Datenblätter liegen innerhalb des jeweiligen Abenteuerordners in dessen Unterordnern für NSCs oder Monster
+
+Standardregel:
+
+- wenn ein NSC oder Monster kampagnenübergreifend relevant ist, liegt seine Datei in `datenblaetter`
+- wenn ein NSC oder Monster ausschließlich für ein einzelnes Abenteuer relevant ist, darf seine Datei im jeweiligen Abenteuerordner liegen
+
+Empfohlene Beispiele:
+
+- `datenblaetter/nsc-phandalin-harbin-wester.md`
+- `datenblaetter/nsc-schattengilde-elgor-der-eismagier.md`
+- `datenblaetter/monster-gnomengard-mimik-endboss.md`
+- `abenteuer/A06/nsc/nsc-schattengilde-frostgardist.md`
+
+Wichtig ist, dass der Pfad in `nscs.md` immer exakt auf die tatsächlich verwendete Datei verweist.
+
+### Verbindliche inhaltliche Struktur
+
+Jede Datenblatt-Datei soll in zwei Ebenen aufgebaut sein:
+
+- strukturierter Datenblock
+- erzählerischer Zusatzblock
+
+Der strukturierte Datenblock soll später in ein Datenblatt überführt werden können.
+
+### Strukturierter Datenblock
+
+Dieser Block soll nach Möglichkeit die folgenden Bereiche in klarer Reihenfolge enthalten:
+
+- Identität
+- Einordnung
+- Grundwerte
+- Verteidigung und Überleben
+- Bewegungsraten
+- Attributswerte
+- Rettungswürfe
+- Fertigkeiten
+- Resistenzen, Immunitäten, Verwundbarkeiten
+- Sinne
+- Sprachen
+- Herausforderungsgrad oder vergleichbare Einordnung
+- Eigenschaften und Merkmale
+- Aktionen
+- Bonusaktionen
+- Reaktionen
+- Legendäre Aktionen oder Spezialmechaniken
+- Beute, Belohnungen oder verwertbare Komponenten
+
+### Erzählerischer Zusatzblock
+
+Zusätzlich können enthalten sein:
+
+- Kurzbeschreibung des Auftretens
+- Rolle im Abenteuer
+- Kampfverhalten
+- Taktik
+- äußere Erscheinung
+- Bildreferenz
+
+### Verknüpfung in `nscs.md`
+
+Wenn ein NSC oder Monster eine eigene Datenblatt-Datei besitzt, soll der Eintrag in `nscs.md` künftig mindestens um folgende Angaben ergänzt werden:
+
+- `ID`
+- `Typ`
+- `Datenblatt`
+
+Beispiel:
+
+- `ID: nsc-phandalin-harbin-wester`
+- `Typ: NSC`
+- `Datenblatt: pfad/zur/datei/nsc-phandalin-harbin-wester.md`
+
+Dadurch bleibt ein Eintrag sowohl für das Lesen als auch für spätere automatische Verarbeitung eindeutig zuordenbar.
 
 ---
 
@@ -269,6 +457,8 @@ Diese Begriffe sollen möglichst konsistent verwendet werden, damit Entwicklunge
 Ein NSC-Eintrag sollte nach Möglichkeit folgende Aspekte enthalten:
 
 - Name
+- ID
+- Typ
 - Rolle oder Funktion
 - Zugehörigkeit oder Fraktion
 - Status
@@ -278,6 +468,7 @@ Ein NSC-Eintrag sollte nach Möglichkeit folgende Aspekte enthalten:
 - Geheimnisse oder verborgene Agenda
 - letzter bekannter Stand
 - relevante Abenteuerauftritte
+- Datenblatt-Datei
 
 ### Orte
 
