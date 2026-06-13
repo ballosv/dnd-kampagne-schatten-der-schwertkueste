@@ -178,6 +178,23 @@ Sie definiert:
 - Pflegeprozess
 - Statuslogik
 - Konventionen für neue Einträge
+- Verweise auf die Vorlagen im Ordner `templates`
+
+---
+
+## Vorlagenordner
+
+Der Ordner `templates` enthält die Standardvorlagen für die zentralen Kampagnendokumente.
+
+Dort liegen insbesondere Vorlagen für:
+
+- `chronik.md`
+- `kampagnenbibel.md`
+- `nscs.md`
+- `orte.md`
+- `offene_handlungsfaeden.md`
+
+Diese Vorlagen dienen als Ausgangsbasis für neue Dokumente oder für eine spätere behutsame Angleichung bestehender Dateien an das Verwaltungssystem.
 
 ---
 
