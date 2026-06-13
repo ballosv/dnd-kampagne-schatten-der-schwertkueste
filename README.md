@@ -231,6 +231,7 @@ Detailausarbeitungen für einzelne Abenteuer, Szenen, Gegner oder Begegnungen ge
 - Metaplot und kampagnenweite Wahrheiten gehören in `kampagnenbibel.md`
 - Figurenstatus gehört in `nscs.md`
 - standardisierte Spielwerte und Datenblattinformationen von NSCs und Monstern gehören in eigene Datenblatt-Dateien
+- standardisierte Datenblattinformationen von besonderen oder kampagnenrelevanten Gegenständen gehören in eigene Datenblatt-Dateien
 - Ortsstatus gehört in `orte.md`
 - ungelöste Konflikte und zukünftige Entwicklungen gehören in `offene_handlungsfaeden.md`
 - vorbereitete Szenen, Begegnungen und Abenteuerstrukturen gehören in die Abenteuerordner unter `abenteuer`
@@ -261,19 +262,24 @@ Ziel ist, dass keine kampagnenrelevante Änderung isoliert nur in einer einzelne
 
 ---
 
-## Standard für Datenblatt-Dateien von NSCs und Monstern
+## Standard für Datenblatt-Dateien von NSCs, Monstern und Gegenständen
 
 ### Ziel
 
-Jeder NSC und jedes Monster mit eigener regelmechanischer Relevanz erhält eine eigene Datei, damit die Informationen eindeutig, einheitlich und maschinenlesbar genug für eine spätere Datenblatt-Generierung vorliegen.
+Jeder NSC, jedes Monster und jeder besondere oder wichtige Gegenstand mit eigener regelmechanischer oder kampagnenweiter Relevanz erhält eine eigene Datei, damit die Informationen eindeutig, einheitlich und maschinenlesbar genug für eine spätere Datenblatt-Generierung vorliegen.
 
 ### Grundregeln
 
-- jede regelrelevante Figur oder Kreatur erhält genau eine primäre Datenblatt-Datei
+- jede regelrelevante Figur, Kreatur oder jeder besondere Gegenstand erhält genau eine primäre Datenblatt-Datei
 - der Anzeigename in der Datei muss eindeutig dem Namen in `nscs.md` zuordenbar sein
 - die Datei muss standardisierte Feldbezeichnungen verwenden
 - Spielwerte und Regelinformationen sollen aus `SRD_CC_v5.1_DE.pdf` ableitbar und mit D&D 5.1 vereinbar sein
 - freie Fließtexte sind erlaubt, aber klar von strukturierten Datenblöcken zu trennen
+
+Für Gegenstände gilt ergänzend:
+
+- besondere Waffen, Artefakte, Schlüsselobjekte und kampagnenwichtige magische Gegenstände sollen in eigenen Datenblatt-Dateien erfasst werden
+- Besitzverlauf, Zustand, bekannte Wirkungen und kampagnenweite Bedeutung sollen dort nachvollziehbar dokumentiert werden
 
 ### Zuordnung zwischen `nscs.md` und Datenblatt-Dateien
 
@@ -350,19 +356,24 @@ Die Dateien müssen an fest definierten Orten abgelegt werden, damit ihre Refere
 
 Verbindliche Ablage:
 
-- kampagnenweite NSC- und Monster-Datenblätter liegen im zentralen Ordner `datenblaetter`
+- kampagnenweite NSC-Datenblätter liegen im Ordner `datenblaetter/nscs`
+- kampagnenweite Monster-Datenblätter liegen im Ordner `datenblaetter/monster`
+- kampagnenweite Gegenstands-Datenblätter liegen im Ordner `datenblaetter/gegenstaende`
 - abenteuerspezifische NSC- und Monster-Datenblätter liegen innerhalb des jeweiligen Abenteuerordners in dessen Unterordnern für NSCs oder Monster
 
 Standardregel:
 
-- wenn ein NSC oder Monster kampagnenübergreifend relevant ist, liegt seine Datei in `datenblaetter`
+- wenn ein NSC kampagnenübergreifend relevant ist, liegt seine Datei in `datenblaetter/nscs`
+- wenn ein Monster kampagnenübergreifend relevant ist, liegt seine Datei in `datenblaetter/monster`
+- wenn ein Gegenstand kampagnenübergreifend relevant ist, liegt seine Datei in `datenblaetter/gegenstaende`
 - wenn ein NSC oder Monster ausschließlich für ein einzelnes Abenteuer relevant ist, darf seine Datei im jeweiligen Abenteuerordner liegen
 
 Empfohlene Beispiele:
 
-- `datenblaetter/nsc-phandalin-harbin-wester.md`
-- `datenblaetter/nsc-schattengilde-elgor-der-eismagier.md`
-- `datenblaetter/monster-gnomengard-mimik-endboss.md`
+- `datenblaetter/nscs/nsc-phandalin-harbin-wester.md`
+- `datenblaetter/nscs/nsc-schattengilde-elgor-der-eismagier.md`
+- `datenblaetter/monster/monster-gnomengard-mimik-endboss.md`
+- `datenblaetter/gegenstaende/gegenstand-gnomengard-frostbrecher-zorn-des-ruhktar.md`
 - `abenteuer/A06/nsc/nsc-schattengilde-frostgardist.md`
 
 Wichtig ist, dass der Pfad in `nscs.md` immer exakt auf die tatsächlich verwendete Datei verweist.

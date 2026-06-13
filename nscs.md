@@ -99,7 +99,7 @@ Geheim:
 - Bedrohung im Umfeld des Thronsaals
 - ID: `monster-gnomengard-mimik-endboss`
 - Typ: `Monster`
-- Datenblatt: `datenblaetter/monster-gnomengard-mimik-endboss.md`
+- Datenblatt: `datenblaetter/monster/monster-gnomengard-mimik-endboss.md`
 
 # Drachen und übernatürliche Wesen
 
