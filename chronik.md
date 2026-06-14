@@ -9,17 +9,14 @@ Dieses Dokument enthält ausschließlich bestätigte Ereignisse aus gespielten o
 
 ### Zeitliche Einordnung
 - Abenteuer: 1
+- Sitzung: `Unbekannt / nicht eingetragen`
+- Ingame-Zeitraum: `Frühe Kampagnenphase`
 - Ausgangspunkt: Phandalin
 
 ### Beteiligte Figuren
-- Helden
-- Harbin Wester
-- Adabra Gwynn
-- Der verrückte Abenteurer
-- Lederhändler
-- Verletzter Hofarbeiter
-- vertriebene Orks
-- Mantikor
+- Helden: Gruppe der Spielercharaktere
+- NSCs: Harbin Wester, Adabra Gwynn, Der verrückte Abenteurer, Lederhändler, Verletzter Hofarbeiter, vertriebene Orks, Mantikor
+- Fraktionen: Phandalin
 
 ### Ausgangslage
 Phandalin leidet unter wachsender Unsicherheit. Gerüchte über einen weißen Drachen und zunehmend aggressive Orkgruppen verunsichern die Bevölkerung. Ein verletzter Hofarbeiter erreicht die Stadt, während dringend Medizin benötigt wird.
@@ -47,7 +44,15 @@ Phandalin leidet unter wachsender Unsicherheit. Gerüchte über einen weißen Dr
 - Veränderte NSCs: Adabra Gwynn wird zu einer aktiven Verbündeten der Helden
 - Neue Orte: Phandalin, Schürferpfad, Haderhügel, Windmühle von Adabra Gwynn, Orklager im Wald
 - Veränderte Orte: Die Umgebung Phandalins wird als bedrohte Grenzregion etabliert
+- Neue Gegenstände: -
+- Gelöste Handlungsfäden: -
 - Neue Handlungsfäden: Drachenbedrohung, vertriebene Orkstämme
+
+### Verweise
+- Relevante Abenteuerdatei: `abenteuer/A02.md`
+- Betroffene Einträge in `nscs.md`: `Harbin Wester`, `Adabra Gwynn`, `Der verrückte Abenteurer`, `Verletzter Hofarbeiter`, `Lederhändler`
+- Betroffene Einträge in `orte.md`: `Phandalin`, `Schürferpfad`, `Haderhügel`, `Windmühle von Adabra Gwynn`, `Orklager im Wald`
+- Betroffene Einträge in `offene_handlungsfaeden.md`: `Die vertriebenen Orkstämme`, `Kalthyros (Cryovain)`
 
 ---
 
@@ -55,14 +60,14 @@ Phandalin leidet unter wachsender Unsicherheit. Gerüchte über einen weißen Dr
 
 ### Zeitliche Einordnung
 - Abenteuer: 2
+- Sitzung: `Unbekannt / nicht eingetragen`
+- Ingame-Zeitraum: `Kurz nach Abenteuer 1`
 - Ausgangspunkt: Rückweg aus den Haderhügeln
 
 ### Beteiligte Figuren
-- Helden
-- Pips
-- Assassine der Schattengilde
-- Agenten der Schattengilde
-- Ork-Schamane
+- Helden: Gruppe der Spielercharaktere
+- NSCs: Pips, Assassine der Schattengilde, Agenten der Schattengilde, Ork-Schamane
+- Fraktionen: Schattengilde, vertriebene Orkstämme
 
 ### Ausgangslage
 Nach ihren ersten Erfolgen geraten die Helden ins Visier der Schattengilde.
@@ -92,7 +97,14 @@ Nach ihren ersten Erfolgen geraten die Helden ins Visier der Schattengilde.
 - Neue Orte: Ruine der Entführung, Versteck der Schattengilde
 - Neue Gegenstände: Frostfang-Kette
 - Veränderte Gegenstände: Frostfang-Kette wird zerstört oder unbrauchbar gemacht
+- Gelöste Handlungsfäden: -
 - Neue Handlungsfäden: Elgor der Eismagier, Schattengilde, Folgen der Entführung von Pips
+
+### Verweise
+- Relevante Abenteuerdatei: `abenteuer/A03.md`
+- Betroffene Einträge in `nscs.md`: `Pips`, `Assassine der Schattengilde`, `Ork-Schamane`, `Elgor der Eismagier`
+- Betroffene Einträge in `orte.md`: `Ruine der Entführung`, `Versteck der Schattengilde`
+- Betroffene Einträge in `offene_handlungsfaeden.md`: `Die Schattengilde`, `Elgor der Eismagier`, `Pips und die Folgen seiner Entführung`, `Frostfang-Kette`
 
 ---
 
@@ -100,16 +112,14 @@ Nach ihren ersten Erfolgen geraten die Helden ins Visier der Schattengilde.
 
 ### Zeitliche Einordnung
 - Abenteuer: 3
+- Sitzung: `Unbekannt / nicht eingetragen`
+- Ingame-Zeitraum: `Unmittelbar nach Abenteuer 2`
 - Ausgangspunkt: Rückkehr nach Phandalin nach der Rettung von Pips
 
 ### Beteiligte Figuren
-- Helden
-- Pips
-- Harbin Wester
-- Die Tuchhändlerin
-- Der Schreiber
-- Der Berserker
-- Widerstand von Phandalin
+- Helden: Gruppe der Spielercharaktere
+- NSCs: Pips, Harbin Wester, Die Tuchhändlerin, Der Schreiber, Der Berserker
+- Fraktionen: Schattengilde, Widerstand von Phandalin
 
 ### Ausgangslage
 Die Helden kehren mit Pips nach Phandalin zurück und wollen den Bürgermeister warnen.
@@ -144,7 +154,14 @@ Die Helden kehren mit Pips nach Phandalin zurück und wollen den Bürgermeister 
 - Neue Orte: Haus der Tuchhändlerin, Stadtwache von Phandalin, Rathaus von Phandalin
 - Veränderte Orte: Phandalin wird zu einer besetzten Stadt; das Rathaus verliert seine Neutralität; die Stadtwache wird zum Kerker der Schattengilde
 - Neue Gegenstände: Karte nach Gnomengard
+- Gelöste Handlungsfäden: -
 - Neue Handlungsfäden: Befreiung von Phandalin, Widerstand von Phandalin, Weg nach Gnomengard
+
+### Verweise
+- Relevante Abenteuerdatei: `abenteuer/A04.md`
+- Betroffene Einträge in `nscs.md`: `Harbin Wester`, `Die Tuchhändlerin`, `Der Schreiber`, `Der Berserker`, `Toblen Stonehill`
+- Betroffene Einträge in `orte.md`: `Phandalin`, `Haus der Tuchhändlerin`, `Stadtwache von Phandalin`, `Rathaus von Phandalin`
+- Betroffene Einträge in `offene_handlungsfaeden.md`: `Die Befreiung von Phandalin`, `Der Widerstand von Phandalin`, `Die Schattengilde`
 
 ---
 
@@ -152,11 +169,14 @@ Die Helden kehren mit Pips nach Phandalin zurück und wollen den Bürgermeister 
 
 ### Zeitliche Einordnung
 - Abenteuer: 4
+- Sitzung: `Unbekannt / nicht eingetragen`
+- Ingame-Zeitraum: `Nach der Flucht aus Phandalin`
 - Ausgangspunkt: Nach dem Sieg über den Berserker
 
 ### Beteiligte Figuren
-- Helden
-- Hüter der Eiswinde
+- Helden: Gruppe der Spielercharaktere
+- NSCs: Hüter der Eiswinde
+- Fraktionen: Mächte der Eismagie
 
 ### Ausgangslage
 Unter den Besitztümern des Berserkers finden die Helden eine runenverzierte Eisscherbe.
@@ -180,7 +200,16 @@ Unter den Besitztümern des Berserkers finden die Helden eine runenverzierte Eis
 ### Veränderungen im Kanon
 - Neue Orte: Eismagie-Astralebene, Nebelstatue, Kristallblumenfelder, Domäne des Hüters der Eiswinde
 - Neue Gegenstände: Eisscherbe
+- Veränderte NSCs: -
+- Veränderte Orte: -
+- Gelöste Handlungsfäden: -
 - Neue Handlungsfäden: Natur der Eismagie-Astralebene, Ursprung und Funktion der Eisscherben
+
+### Verweise
+- Relevante Abenteuerdatei: `abenteuer/A04.01.md`
+- Betroffene Einträge in `nscs.md`: `Der Berserker`, `Elgor der Eismagier`
+- Betroffene Einträge in `orte.md`: `Eismagie-Astralebene`
+- Betroffene Einträge in `offene_handlungsfaeden.md`: `Die Eismagie-Astralebene`, `Die Eisscherben`
 
 ---
 
@@ -188,17 +217,14 @@ Unter den Besitztümern des Berserkers finden die Helden eine runenverzierte Eis
 
 ### Zeitliche Einordnung
 - Abenteuer: 5
+- Sitzung: `Unbekannt / nicht eingetragen`
+- Ingame-Zeitraum: `Nach der Flucht aus dem besetzten Phandalin`
 - Ausgangspunkt: Flucht aus dem besetzten Phandalin mit der Karte nach Gnomengard
 
 ### Beteiligte Figuren
-- Helden
-- Soldaten der Schattengilde
-- Dabbledob
-- Fibblestib
-- König Korboz
-- König Gnerkli
-- Mimik
-- Troll
+- Helden: Gruppe der Spielercharaktere
+- NSCs: Soldaten der Schattengilde, Dabbledob, Fibblestib, König Korboz, König Gnerkli, Mimik, Troll
+- Fraktionen: Schattengilde, Gnomengard
 
 ### Ausgangslage
 Die Helden verlassen Phandalin mit der Karte nach Gnomengard, während die Schattengilde versucht, sie aufzuhalten und den Zugang zu einer möglichen Waffe gegen den Drachen zu verhindern.
@@ -233,7 +259,14 @@ Die Helden verlassen Phandalin mit der Karte nach Gnomengard, während die Schat
 - Neue Orte: Gnomengard, Werkstatt von Fibblestib, Thronsaal von Gnomengard, Schlafräume der Könige, Brücke von Gnomengard, Toter Wald, Ruinendorf, Schwertberge
 - Veränderte Orte: Gnomengard wird von einem Ort der Angst zu einem Verbündeten der Helden
 - Neue Gegenstände: Frostbrecher – Zorn des Ruhktar
+- Gelöste Handlungsfäden: Krise in Gnomengard durch den Mimik
 - Neue Handlungsfäden: Bündnis mit den Gnomen, Wilde Magie in Gnomengard, Ruhktars Erwachen
+
+### Verweise
+- Relevante Abenteuerdatei: `abenteuer/A05.md`
+- Betroffene Einträge in `nscs.md`: `Dabbledob`, `Fibblestib`, `König Korboz`, `König Gnerkli`, `Mimik (Endboss)`, `Ruhktar`
+- Betroffene Einträge in `orte.md`: `Gnomengard`, `Werkstatt von Fibblestib`, `Thronsaal von Gnomengard`, `Schlafräume der Könige`, `Brücke von Gnomengard`, `Toter Wald`, `Ruinendorf`, `Schwertberge`
+- Betroffene Einträge in `offene_handlungsfaeden.md`: `Bündnis mit den Gnomen`, `Wilde Magie in Gnomengard`, `Ruhktars Erwachen`, `Kalthyros (Cryovain)`
 
 ---
 
