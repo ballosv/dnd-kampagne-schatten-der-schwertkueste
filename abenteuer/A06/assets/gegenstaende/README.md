@@ -1,0 +1,1 @@
+# Gegenstands-Assets – A06

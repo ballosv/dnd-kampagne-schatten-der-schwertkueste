@@ -622,6 +622,100 @@ Abenteuerdateien dürfen ausführlicher, experimenteller und planungsnäher sein
 
 Sobald Inhalte im Spiel bestätigt wurden, sollen ihre kampagnenweiten Konsequenzen in die zuständigen Hauptdateien übertragen werden.
 
+### Grundsatz zur Ablage
+
+- bereits abgeschlossene oder ältere Abenteuer dürfen weiterhin als einzelne Markdown-Datei direkt in `abenteuer/` liegen
+- neue Abenteuer sollen grundsätzlich als eigener Ordner unter `abenteuer/[Abenteuer-ID]/` angelegt werden
+- die Ordnerstruktur dient der Planung, Vorbereitung, Durchführung und Nachbereitung eines einzelnen Abenteuers
+
+### Verbindliche Grundstruktur für neue Abenteuerordner
+
+Jeder neue Abenteuerordner soll mindestens die folgenden Dateien enthalten:
+
+- `README.md`
+- `abenteuer-entwurf.md`
+- `abenteuer-ausarbeitung.md`
+- `abenteuer-sitzungsnotizen.md`
+- `abenteuer-zusatzinformationen.md`
+
+Zusätzlich sollen bei Bedarf die folgenden Unterordner verwendet werden:
+
+- `szenen/`
+- `begegnungen/`
+- `orte/`
+- `handouts/`
+- `tabellen/`
+- `nsc/`
+- `monster/`
+- `gegenstaende/`
+- `assets/`
+
+### Zweck der Kern-Dateien eines Abenteuerordners
+
+- `README.md`: Navigations- und Übersichtsdatei des Abenteuers mit Status, Kurzbeschreibung, Dateiverweisen und offenen Baustellen
+- `abenteuer-entwurf.md`: früher Ideenraum für Plot, Varianten, offene Fragen und noch nicht spielfertige Gedanken
+- `abenteuer-ausarbeitung.md`: operative Hauptdatei für die Spielvorbereitung mit Szenen, Begegnungen, Proben, Konsequenzen und Leitfäden
+- `abenteuer-sitzungsnotizen.md`: Dokumentation dessen, was am Spieltisch tatsächlich passiert ist
+- `abenteuer-zusatzinformationen.md`: Reserve-Material, Lore, Alternativen, Handout-Texte, Varianten und sonstige Zusatzinformationen
+
+### Regeln für lokale und kampagnenweite NSC-, Monster- und Gegenstandsdateien
+
+- kampagnenweit relevante NSCs liegen primär in `datenblaetter/nscs`
+- kampagnenweit relevante Monster liegen primär in `datenblaetter/monster`
+- kampagnenweit relevante Gegenstände liegen primär in `datenblaetter/gegenstaende`
+- ausschließlich abenteuerspezifische NSCs dürfen im jeweiligen Abenteuerordner unter `nsc/` liegen
+- ausschließlich abenteuerspezifische Monster dürfen im jeweiligen Abenteuerordner unter `monster/` liegen
+- ausschließlich abenteuerspezifische Gegenstände dürfen im jeweiligen Abenteuerordner unter `gegenstaende/` liegen
+
+Wenn eine zunächst lokale Figur, Kreatur oder ein Gegenstand später kampagnenweit relevant wird, soll eine primäre Datei in den passenden Ordner unter `datenblaetter/` überführt oder dort neu angelegt werden.
+
+### Regeln für Bilder, Karten und sonstige Assets
+
+Für visuelles Material wird zwischen kampagnenweiten und abenteuerspezifischen Assets unterschieden.
+
+Kampagnenweit wiederverwendbare Assets liegen zentral in `assets/`, insbesondere unter:
+
+- `assets/nscs/`
+- `assets/monster/`
+- `assets/gegenstaende/`
+- `assets/orte/`
+- `assets/karten/`
+- `assets/handouts/`
+
+Abenteuerspezifische Assets liegen im jeweiligen Abenteuerordner unter `assets/`, insbesondere unter:
+
+- `abenteuer/[Abenteuer-ID]/assets/karten/`
+- `abenteuer/[Abenteuer-ID]/assets/nscs/`
+- `abenteuer/[Abenteuer-ID]/assets/monster/`
+- `abenteuer/[Abenteuer-ID]/assets/gegenstaende/`
+- `abenteuer/[Abenteuer-ID]/assets/handouts/`
+
+Entscheidungsregel:
+
+- Material mit kampagnenweiter oder mehrfacher Nutzung liegt im zentralen Ordner `assets/`
+- Material, das nur für ein einzelnes Abenteuer benötigt wird, liegt im `assets/`-Ordner des jeweiligen Abenteuerordners
+
+### Empfohlene Benennung von Asset-Dateien
+
+- Bild- und Asset-Dateien sollen nach Möglichkeit aus der ID oder dem Abenteuerkontext ableitbar sein
+- kampagnenweite Porträts, Karten oder Illustrationen sollen die zugehörige ID im Dateinamen tragen
+- abenteuerspezifische Assets sollen zusätzlich die Abenteuer-ID im Dateinamen tragen
+
+Beispiele:
+
+- `assets/nscs/nsc-schattengilde-elgor-der-eismagier-portrait.png`
+- `assets/gegenstaende/gegenstand-gnomengard-frostbrecher-zorn-des-ruhktar.png`
+- `abenteuer/A06/assets/karten/a06-eisnadelfestung-uebersicht.jpg`
+- `abenteuer/A06/assets/handouts/a06-runenfragment-01.png`
+
+### Arbeitsablauf für Abenteuerordner
+
+Vor dem Spiel werden Entwurf, Ausarbeitung, Szenen, Begegnungen, lokale Datenblätter, Handouts und Karten im Abenteuerordner gepflegt.
+
+Während und nach dem Spiel werden die tatsächlichen Ereignisse in `abenteuer-sitzungsnotizen.md` festgehalten.
+
+Danach werden bestätigte Folgen wie gewohnt in die kampagnenweiten Hauptdateien synchronisiert.
+
 ---
 
 ## Regeln zur Konsistenzprüfung
